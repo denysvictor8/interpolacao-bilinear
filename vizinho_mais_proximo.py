@@ -47,12 +47,12 @@ def ampliarVizinho(img):
 def main():
 
     # pega uma imagem qqr
-    img = cv2.imread('./mcqueen.png')
+    img = cv2.imread('./soldier.jpg')
     img_reduzida = reduzirVizinho(img)
     img_ampliada = ampliarVizinho(img)
 
-    cv2.imwrite('./imagens_resultados/reduzida.jpg', img_reduzida)
-    cv2.imwrite('./imagens_resultados/ampliada.jpg', img_ampliada)
+    cv2.imwrite('./imagens_resultados/reduzida-vmp.jpg', img_reduzida)
+    cv2.imwrite('./imagens_resultados/ampliada-vmp.jpg', img_ampliada)
 
 if __name__ == '__main__':
     main()
